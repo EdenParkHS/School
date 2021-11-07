@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eden park High School</title>
+    <link rel="icon" href="images/title.jpg" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/86c002ee3b.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        body {
+            background-image: url("images/back.jpg");
+        }
+
+        .header img {
+            float: left;
+            width: 500px;
+            height: 100px;
+        }
+
+        .header {
+            background-image: url("images/background.jpg");
+            background-position: 100%;
+            float: bottom;
+            height: 100px;
+        }
+
+        li {
+            float: left;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li a {
+            border: 2px solid;
+            border-radius: 5px;
+            display: block;
+            text-align: left;
+            margin-left: 20px;
+            padding: 2px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .mar {
+            margin-left: 500px;
+        }
+
+        div.container {
+            width: 100%;
+            height: 800px;
+            border: 1px solid gray;
+
+        }
+
+        nav {
+            position: fixed;
+            float: left;
+            max-width: 20px;
+            margin: 10px;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        article {
+            text-align: center;
+            height: 800px;
+            margin-left: 200px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+        .footer {
+            padding-top: 11px;
+            padding-bottom: 5px;
+            text-align: center;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .icons {
+            width: 38px;
+            height: 38px;
+            margin: 10px auto;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .icons::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 50%;
+            transform: translate(100%, 100%);
+            transition: all .4s;
+            background: linear-gradient(to right, #d1edf9, #badbfe);
+        }
+
+        .icons:hover::before {
+            transform: translate(0);
+            animation: anim 0.4s ease-in-out;
+        }
+
+        @keyframes anim {
+
+            0%,
+            100% {
+                width: 100%;
+                height: 100%;
+            }
+
+            50% {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="Eden Park High School" /></a>
+        <div class="mar">
+            <h1 color="grey">
+                <marquee>Welcome to Eden Park High School</marquee>
+            </h1>
+            <hr size="3" color="blue">
+
+            <ul class="tabs">
+                <li><a title="Welcome" href="index.html">HOME</a></li>
+                <li><a title="About School" href="aboutschool.html">ABOUT SCHOOL</a></li>
+                <li><a title="Admission">
+                        <font color="red">ADMISSION</font>
+                    </a></li>
+
+                <li><a title="Contact Us" href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="requirements.html">Requirements</a></li>
+                <li><a href="feestructure.html">Fee Structure</a></li>
+                <li><a href="hostellife.html">Hostel Life</a></li>
+                <li><a href="transportfacility.html">Transport Facility</a></li>
+                <li><a>
+                        <font color="red"><u>FAQs</u></font>
+                    </a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <h1><u>FAQs</u></h1>
+            <hr><br>
+            <h2 align="left">How can Eden offer admission to all students who qualify?</h2><br>
+            <h3 align="left">
+                <font color="grey">The unique nature of our admissions criteria and
+                    process allows us to identify the brightest, most motivated students in the world and
+                    our distinctive structure enables us to deliver the highest quality education possible
+                    to any student who meets our rigorous standards. Because classes are taught via live,
+                    video-based seminars, students and professors can live anywhere in the world, allowing
+                    us to conduct multiple classes across time zones</font>
+            </h3><br>
+            <h2 align="left">How can Eden offer such low tuition?</h2><br>
+            <h3 align="left">
+                <font color="grey">Minerva is committed to delivering an extraordinary education
+                    at a fraction of the cost of other highly-selective institutions. Our low tuition is possible
+                    because we only invest in the things needed to provide the best education possible. This means
+                    that we don’t own expensive real estate, outdated infrastructure, or support costly collegiate
+                    sports.</font>
+            </h3><br>
+            <h2 align="left">How is Eden different from other undergraduate programs?</h2><br>
+            <h3 align="left">
+                <font color="grey">The key differences include:
+                    <ul style="list-style-type:disc">
+                        <li>Rigorous curriculum based on the science of learning</li><br>
+                        <li>Accomplished faculty focused on student instruction</li><br>
+                        <li>Four years of global cultural immersion</li><br>
+                        <li>Only small seminars with fewer than 20 students</li><br>
+                        <li>Advanced interactive learning environment</li><br>
+                        <li>Lifelong career support services</li><br>
+                        <li>Merit-based admissions for all qualified students</li><br>
+                        <li>Accessible and affordable with tuition $12,500/year</li><br>
+                    </ul>
+                </font>
+            </h3><br>
+
+            <h2 align="left">What are the Eden Schools at KGI?</h2><br>
+            <h3 align="left">
+                <font color="grey">Eden offers an innovative undergraduate
+                    program that combines an interdisciplinary curriculum and rigorous academic
+                    standards, an accomplished faculty versed in the science of learning, an
+                    advanced interactive learning platform that leverages cutting-edge technology,
+                    and four years of immersive global experience. The Eden Schools at KGI were
+                    established in 2013 by KGI – the Keck Graduate Institute – a Western Senior
+                    College and University Commission-accredited institution, in partnership with
+                    Eden Project.</font>
+            </h3><br>
+        </article>
+    </div>
+    <div class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-1.5x"
+                    style="color: grey;"></i></a>
+        </div>
+        <div class="icons">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-1.5x"
+                    style="color: #00acee;"></i></a>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1.5x"
+                    style="color: #3b5998;"></i></a>
+        </div>
+        <p style="margin: 0;">All Rights Reserved © 2021 Designed by Vipul Varshney and Abhishek Bajaj</p>
+    </div>
+</body>
+
+</html>

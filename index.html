@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Eden park High School</title>
+	<link rel="icon" href="images/title.jpg" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/86c002ee3b.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		* {
+			margin: 0px;
+		}
+
+		body {
+			background-image: url("images/back.jpg");
+		}
+
+		.header img {
+			float: left;
+			width: 500px;
+			height: 100px;
+		}
+
+		.header {
+			background-image: url("images/background.jpg");
+			background-position: 100%;
+			float: bottom;
+			height: 100px;
+		}
+
+		li {
+			float: left;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		li a {
+			border: 2px solid;
+			border-radius: 5px;
+			display: block;
+			text-align: left;
+			margin-left: 20px;
+			padding: 2px;
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+		a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		.mar {
+			margin-left: 500px;
+		}
+
+		/* .marquee {
+			margin: 0;
+			overflow: hidden;
+		} */
+
+		.principal {
+			width: 320px;
+			height: 100%;
+			border: solid;
+			margin-left: 1180px;
+			margin-top: -205px;
+			border-radius: 20px;
+			background-color: violet;
+		}
+
+		.img {
+			height: 200px;
+			width: 320px;
+			border-bottom-right-radius: 100px;
+		}
+
+		.video {
+			margin-top: -320px;
+			/* margin-left: 330px; */
+			text-align: center;
+		}
+
+		fieldset.id {
+			width: 300px;
+			height: 298px;
+			margin-top: -319px;
+			margin-left: 2px;
+		}
+
+		.ann {
+			background-color: green;
+		}
+
+		.marquee {
+			margin-right: 360px;
+		}
+
+		.footer {
+			padding-top: 11px;
+			/* padding-bottom: 5px; */
+			text-align: center;
+			/* align-items: center; */
+			/* justify-content: center; */
+		}
+
+		.icons {
+			width: 38px;
+			height: 38px;
+			margin: 10px auto;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: 50%;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		.icons::before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			border-radius: 50%;
+			transform: translate(100%, 100%);
+			transition: all .4s;
+			background: linear-gradient(to right, #d1edf9, #badbfe);
+		}
+
+		.icons:hover::before {
+			transform: translate(0);
+			animation: anim 0.4s ease-in-out;
+		}
+
+		@keyframes anim {
+
+			0%,
+			100% {
+				width: 100%;
+				height: 100%;
+			}
+
+			50% {
+				width: 50%;
+				height: 50%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<a href="school.html"><img src="images/logo.png" alt="Eden Park High School" /></a>
+		<div class="mar">
+			<h1 color="grey">
+				<marquee behavior="alternate" direction="right">Welcome to Eden Park High School</marquee>
+			</h1>
+			<hr size="3" color="blue">
+
+			<ul class="tabs">
+				<li><a title="Welcome" href="index.html">HOME</a></li>
+				<li><a title="About School" href="aboutschool.html">ABOUT SCHOOL</a></li>
+				<li><a title="Admission" href="admission.html">ADMISSION</a></li>
+				<li><a title="Contact Us" href="contactus.html">CONTACT US</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<marquee class="marquee" direction="left" onmouseover="this.stop();" onmouseout="this.start();">
+		<img src="images/pic1.jpg" width="300" height="200" />
+		<img src="images/pic2.jpg" width="300" height="200" />
+		<img src="images/pic3.jpg" width="300" height="200" />
+		<img src="images/pic4.jpeg" width="300" height="200" />
+		<img src="images/pic5.jpg" width="300" height="200" />
+		<img src="images/pic6.jpg" width="300" height="200" />
+	</marquee>
+
+	<fieldset class="principal">
+		<h3 style="text-align: center;">
+			<ul color="black">Principal's Message</ul>
+		</h3>
+		<p><img class="img" src="images/principal.jpg">
+			“Education makes people easy to lead. But difficult to drive, easy to govern but impossible to enslave.”
+			Each day when I walk the school aisle, I hear the chatter of eager minds, the excitement from the victorious
+			athletes, the thump of dance feet and the sound of melodious voices harmonizing. We with a different
+			perceptive, allow our students to relish their childhood. We value individualism and try to inculcate
+			creativity, innovation and confidence. Beside rigorous scholastic programmes, the school has mark its name
+			in all spheres such as art and craft, music, variety of sports, environmental conservation activities and
+			the list goes on….
+			<strong><u>Mrs. Missy R Nelson</u> (Principal)</strong></p>
+	</fieldset>
+	<div class="video">
+		<video width="560" controls>
+			<source src="videos/bird.mp4" type="video/mp4">
+
+		</video>
+	</div>
+
+	<fieldset class="id">
+		<div class="ann">
+			<h2 align="center" bgcolor="white"> Announcements</h2>
+		</div>
+		<marquee onmouseover="this.stop();" onmouseout="this.start();" direction="up" scrollamount="2" height="90%">
+
+			<ul style="list-style-type:square">
+				<li>
+					<p>
+						<font bgcolor="white">"we take pride in sharing with everyone about</font> the latest laurel
+						which has been brought to the school by our budding Badminton player-"
+						<strong><br>Garima (XI-E)<br></strong>
+						" and "
+						<strong><br>Simran (XII-B)<br></strong>
+						", who have won the "
+						<strong>National Inter School Badminton tournament 2016</strong>
+
+					</p>
+				</li>
+				<hr>
+				<br>
+				<li>
+					<p><strong>Tomorrow School Timing are 8:00 a.m to 12:30 p.m
+							w.e.f November 20, 2016</strong></p>
+				</li>
+				<hr>
+				<br>
+				<li>
+					<p><strong>"It is not mandatory for the parents to buy the school books
+							or uniform from any given place. They can purchase the same from anywhere
+							they desire. The details of the unifrom and school books is readily
+							available with the school office and is displayed on the school notice
+							board."</strong></p>
+				</li>
+				<hr>
+				<br>
+
+				<li>
+					<p><span style="color:#ff0000;"><strong>Auto Rickshaw for Students-against safety
+								norms</strong></span></p>
+				</li>
+				<hr>
+				<br>
+				<li>
+					<p><strong>School Timing :
+							<br>
+							<ul style="list-style-type:disc">
+								<li>"Classes Nursery to I (8:40 a.m to 1:00 p.m)"</li>
+								<br>
+								<li>"Classes II to X (7:40 a.m to 2:20 p.m)"</li>
+								<br>
+								<li>"Classes XI to XII (7:40 a.m to 1:00 p.m)"</li>
+							</ul>
+						</strong></p>
+				</li>
+			</ul>
+		</marquee>
+	</fieldset>
+	<hr>
+	<div class="footer">
+		<div class="icons">
+			<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-1.5x" style="color: grey;"></i></a>
+		</div>
+		<div class="icons">
+			<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-1.5x" style="color: #00acee;"></i></a>
+		</div>
+		<div class="icons">
+			<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1.5x" style="color: #3b5998;"></i></a>
+		</div>
+		<p style="margin: 0;">All Rights Reserved © 2021 Designed by Vipul Varshney and Abhishek Bajaj</p>
+	</div>
+</body>
+
+</html>

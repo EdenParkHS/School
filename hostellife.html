@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Eden park High School</title>
+    <link rel="icon" href="images/title.jpg" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/86c002ee3b.js" crossorigin="anonymous"></script>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+        }
+
+        body {
+            background-image: url("images/back.jpg");
+        }
+
+        .header img {
+            float: left;
+            width: 500px;
+            height: 100px;
+        }
+
+        .header {
+            background-image: url("images/background.jpg");
+            background-position: 100%;
+            float: bottom;
+            height: 100px;
+        }
+
+        li {
+            float: left;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li a {
+            border: 2px solid;
+            border-radius: 5px;
+            display: block;
+            text-align: left;
+            margin-left: 20px;
+            padding: 2px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        .mar {
+            margin-left: 500px;
+        }
+
+        div.container {
+            width: 100%;
+            height: 800px;
+            border: 1px solid gray;
+        }
+
+        nav {
+            position: fixed;
+            float: left;
+            max-width: 20px;
+            margin: 10px;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        nav ul a {
+            text-decoration: none;
+        }
+
+        article {
+            text-align: center;
+            height: 800px;
+            margin-left: 200px;
+            border-left: 1px solid gray;
+            padding: 1em;
+            overflow: hidden;
+        }
+
+        .image {
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            border: solid;
+            border-radius: 10px;
+
+        }
+
+        .footer {
+            padding-top: 11px;
+            padding-bottom: 5px;
+            text-align: center;
+            /* align-items: center; */
+            /* justify-content: center; */
+        }
+
+        .icons {
+            width: 38px;
+            height: 38px;
+            margin: 10px auto;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            border-radius: 50%;
+            overflow: hidden;
+            z-index: 1;
+        }
+
+        .icons::before {
+            content: " ";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 50%;
+            transform: translate(100%, 100%);
+            transition: all .4s;
+            background: linear-gradient(to right, #d1edf9, #badbfe);
+        }
+
+        .icons:hover::before {
+            transform: translate(0);
+            animation: anim 0.4s ease-in-out;
+        }
+
+        @keyframes anim {
+
+            0%,
+            100% {
+                width: 100%;
+                height: 100%;
+            }
+
+            50% {
+                width: 50%;
+                height: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/logo.png" alt="Eden Park High School" /></a>
+        <div class="mar">
+            <h1 color="grey">
+                <marquee>Welcome to Eden Park High School</marquee>
+            </h1>
+            <hr size="3" color="blue">
+
+            <ul class="tabs">
+                <li><a title="Welcome" href="index.html">HOME</a></li>
+                <li><a title="About School" href="aboutschool.html">ABOUT SCHOOL</a></li>
+                <li><a title="Admission">
+                        <font color="red">ADMISSION</font>
+                    </a></li>
+
+                <li><a title="Contact Us" href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <nav>
+            <ul>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="requirements.html">Requirements</a></li>
+                <li><a href="feestructure.html">Fee Structure</a></li>
+                <li><a>
+                        <font color="red"><u>Hostel Life</u></font>
+                    </a></li>
+                <li><a href="transportfacility.html">Transport Facility</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+
+        <article>
+            <fieldset class="campus">
+                <h1 align="center" font-face="verdana">Hostel Life</h1>
+                <hr>
+                <img class="image" src="images/h1.jpg">
+                <img class="image" src="images/h2.jpg">
+                <img class="image" src="images/h3.jpg">
+                <img class="image" src="images/h4.jpg">
+                <h4>New Hostels have been constructed to provide safe and congenial atmosphere to the students. Separate
+                    hostel facilities are available for boys and girls on campus. The living spaces are structured to
+                    inspire harmony. We have spared no pains to make the surroundings fresh and green. Only in such a
+                    beautiful atmosphere can there be the germination of productive thoughts and ideas.
+
+                    It is their home away from home. Our ideas of the dormitories, unlike other institutions, is an area
+                    meant for the students to study, relax and socialize.
+
+                    Any form of ragging is strictly prohibited and attracts severe punishments</h4>
+            </fieldset>
+            <br>
+            <h3 align="left"><u>Hostel Facilities : Features</u></h3>
+            <a1 align="left">
+                <ul style="list-style-type:disc">
+                    <li>Separate Hostels for Boys and Girls on Campus</li><br>
+                    <li>Furnished Rooms and attached bathroom in Boys Hostel.</li><br>
+                    <li>Beauty Parlour in Girls Hostel.</li><br>
+                    <li>Ragging is strictly prohibited and strict discipline is maintained.</li><br>
+                    <li>Medical Care, Health Clinic, 24 hrs Security & House-keeping facility available.</li><br>
+                    <li>24 hrs power back up.</li><br>
+                    <li>Nutritious and multi cuisine delicacy .</li><br>
+                    <li>Access to Computer Lab, Library, Recreation Center, Gymnasium.</li><br>
+                    <li>A Senior Faculty Member as Warden-Friend-Guide is the exclusive feature of the Hostel.</li><br>
+                </ul><br>
+                <h3 align="left"><u>Hostel Rules</u></h3>
+                <ul style="list-style-type:circle">
+                    <li>Students are required to follow the rules of the Hostel as prescribed by the Management from
+                        time to time.</li><br>
+                    <li>The hostel fee will be charged for one complete academic year and students desirous of joining
+                        the hostel in between the academic year may do so, after paying the hostel fees for the entire
+                        academic year</li><br>
+                    <li>Students who desire not to avail the hostel facilities for the next academic year are required
+                        to vacate the room while proceeding on vacation at the end of the current academic year and
+                        complete the formalities for obtaining a clearance certificate from the hostel warden.</li><br>
+                    <li>If the student does not vacate the room while proceeding on vacation at the end of the academic
+                        year, then he / she will have to pay the hostel fee for the next academic year</li><br>
+                    <li>The visiting hours for Parents & relatives are:
+                        <ul style="list-style-type:disc">
+                            <li>Monday to Friday – 5.30 P.M to 7.30 P.M</li><br>
+                            <li>Saturdays – 4.00 P.M to 7.30 P.M</li><br>
+                            <li>Sundays – 10.00 A.M to 7.30 P.M</li><br>
+                        </ul>
+                    </li>
+            </a1>
+        </article>
+    </div>
+    <div class="footer">
+        <div class="icons">
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-1.5x"
+                    style="color: grey;"></i></a>
+        </div>
+        <div class="icons">
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-1.5x"
+                    style="color: #00acee;"></i></a>
+        </div>
+        <div class="icons">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1.5x"
+                    style="color: #3b5998;"></i></a>
+        </div>
+        <p style="margin: 0;">All Rights Reserved © 2021 Designed by Vipul Varshney and Abhishek Bajaj</p>
+    </div>
+</body>
+
+</html>

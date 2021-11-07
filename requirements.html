@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Eden park High School</title>
+	<link rel="icon" href="images/title.jpg" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/86c002ee3b.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		* {
+			margin: 0px;
+		}
+
+		body {
+			background-image: url("images/back.jpg");
+		}
+
+		.header img {
+			float: left;
+			width: 500px;
+			height: 100px;
+		}
+
+		.header {
+			background-image: url("images/background.jpg");
+			background-position: 100%;
+			float: bottom;
+			height: 100px;
+		}
+
+		li {
+			float: left;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		li a {
+			border: 2px solid;
+			border-radius: 5px;
+			display: block;
+			text-align: left;
+			margin-left: 20px;
+			padding: 2px;
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+		a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		.mar {
+			margin-left: 500px;
+		}
+
+		div.container {
+			width: 100%;
+			height: 800px;
+			border: 1px solid gray;
+		}
+
+		nav {
+			position: fixed;
+			float: left;
+			max-width: 20px;
+			margin: 10px;
+			padding: 1em;
+		}
+
+		nav ul {
+			list-style-type: none;
+			padding: 10px;
+		}
+
+		nav ul a {
+			text-decoration: none;
+		}
+
+		article {
+			text-align: center;
+			height: 800px;
+			margin-left: 200px;
+			border-left: 1px solid gray;
+			padding: 1em;
+			overflow: hidden;
+		}
+
+		.footer {
+			padding-top: 11px;
+			padding-bottom: 5px;
+			text-align: center;
+			/* align-items: center; */
+			/* justify-content: center; */
+		}
+
+		.icons {
+			width: 38px;
+			height: 38px;
+			margin: 10px auto;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: 50%;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		.icons::before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			border-radius: 50%;
+			transform: translate(100%, 100%);
+			transition: all .4s;
+			background: linear-gradient(to right, #d1edf9, #badbfe);
+		}
+
+		.icons:hover::before {
+			transform: translate(0);
+			animation: anim 0.4s ease-in-out;
+		}
+
+		@keyframes anim {
+
+			0%,
+			100% {
+				width: 100%;
+				height: 100%;
+			}
+
+			50% {
+				width: 50%;
+				height: 50%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<a href="index.html"><img src="images/logo.png" alt="Eden Park High School" /></a>
+		<div class="mar">
+			<h1 color="grey">
+				<marquee>Welcome to Eden Park High School</marquee>
+			</h1>
+			<hr size="3" color="blue">
+
+			<ul class="tabs">
+				<li><a title="Welcome" href="index.html">HOME</a></li>
+				<li><a title="About School" href="aboutschool.html">ABOUT SCHOOL</a></li>
+				<li><a title="Admission">
+						<font color="red">ADMISSION</font>
+					</a></li>
+
+				<li><a title="Contact Us" href="contactus.html">CONTACT US</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container">
+
+		<nav>
+			<ul>
+				<li><a href="admission.html">Admission</a></li>
+				<li><a>
+						<font color="red"><u>Requirements</u></font>
+					</a></li>
+				<li><a href="feestructure.html">Fee Structure</a></li>
+				<li><a href="hostellife.html">Hostel Life</a></li>
+				<li><a href="transportfacility.html">Transport Facility</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+			</ul>
+		</nav>
+
+		<article>
+			<h1><u>Requirements</u></h1>
+			<h1>
+				<marquee height="25" behavior="alternate" scrollamount="15" bgcolor="#66CD00">Nursery Admission 2017
+				</marquee>
+			</h1>
+			<p align="left"><b><u>Age Criteria:</u></b> A child who has completed 3 years as on March 31 of the year of
+				admission is eligible for admission.</p><br>
+			<p align="left"><b><u>Issue and download of application form:</u></b> Registration form for Nursery
+				Admission 2015 can be downloaded from School’s website
+				or can be collected from school’s office free of cost.</p><br>
+			<p align="left"><b><u>Registration:</u></b>Duly filled and attested (signed) application form along with
+				required documents should be submitted
+				at school office along with registration fee of $ 10 before the last date of form submission.</p><br>
+			<p align="left"><b><u>Documents Required for Admission:-:</u></b>
+				<ul>
+					<li>•Attested photocopy of birth certificate</li><br>
+					<li>•Attested photocopy of SC/ST category certificate</li><br>
+					<li>•One passport sized photographer of the child, child’s father and mother.</li>
+				</ul><br>
+			</p><br>
+			<p align="left"><u><i>Seat Reservation and criteria for admission is as per the guidelines followed by the
+						institute.</i></u></p>
+			<br>
+			<h1>
+				<marquee height="25" behavior="alternate" scrollamount="15" bgcolor="#66CD00">Class XI Admission 2017
+				</marquee>
+			</h1>
+			<p align="left">Class XI Admission in schools for the academic year 2017 would made on the basis of
+				grade/percentage
+				of marks obtained in Class X under state board. Candidates wishing to apply for admission are required
+				to do so online. In case of
+				non availability of seats, Schools conduct an admission test for class XI students based on class X
+				syllabus. This is a multiple objective
+				type test with questions in all subjects expect English.</p><br>
+			<p align="left"><b><u>Eligibility:</u></b> Grade or percentage of marks obtained Class X under state board.
+			</p><br>
+			<p align="left"><b><u>Documents required for Admission:-</u></b>
+				•Attested photocopy of municipal birth certificate. (Original to be produced at the time of
+				admission).<br>
+				•Two passport sized photographs.<br>
+				•School Leaving Certificate duly countersigned.<br>
+				•Medical fitness certificate from a competent doctor.<br>
+				•Character Certificate from last attended school.<br>
+			</p><br>
+			<p align="left"><u><i>Respective school managements reserve the right to add, change or amend any of the
+						rules and regulations pertaining to admission.</i></u></p>
+			<p align="left"><u><i>This would be binding on all students and parents.</i></u></p>
+		</article>
+	</div>
+	<div class="footer">
+		<div class="icons">
+			<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-1.5x"
+					style="color: grey;"></i></a>
+		</div>
+		<div class="icons">
+			<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-1.5x"
+					style="color: #00acee;"></i></a>
+		</div>
+		<div class="icons">
+			<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1.5x"
+					style="color: #3b5998;"></i></a>
+		</div>
+		<p style="margin: 0;">All Rights Reserved © 2021 Designed by Vipul Varshney and Abhishek Bajaj</p>
+	</div>
+</body>
+
+</html>

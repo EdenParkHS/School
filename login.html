@@ -1,0 +1,281 @@
+<html>
+
+<head>
+	<title>Eden park High School</title>
+	<link rel="icon" href="title.jpg" type="image/x-icon">
+	<script src="https://kit.fontawesome.com/86c002ee3b.js" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		* {
+			margin: 0px;
+		}
+
+		body {
+			background-image: url("back.jpg");
+		}
+
+		.header img {
+			float: left;
+			width: 500px;
+			height: 100px;
+		}
+
+		.header {
+			background-image: url("background.jpg");
+			background-position: 100%;
+			float: bottom;
+			height: 100px;
+		}
+
+		li {
+			float: left;
+		}
+
+		ul {
+			list-style-type: none;
+		}
+
+		li a {
+			border: 2px solid;
+			border-radius: 5px;
+			display: block;
+			text-align: left;
+			margin-left: 20px;
+			padding: 2px;
+			margin-top: 10px;
+			font-size: 20px;
+		}
+
+		a:hover {
+			color: red;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+
+		.mar {
+			margin-left: 500px;
+		}
+
+		#login {
+			margin-left: 100px;
+			width: 300px;
+			margin-top: 30px;
+			margin-left: 200px;
+		}
+
+		form fieldset input[type="text"],
+		input[type="password"] {
+			background-color: #FFFFFF;
+			border: none;
+			border-radius: 3px;
+			color: #5a5656;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			height: 50px;
+			outline: none;
+			padding: 0px 10px;
+			width: 300px;
+			margin-bottom: 20px;
+		}
+
+		form fieldset input[type="submit"] {
+			background-color: #008dde;
+			border: none;
+			border-radius: 3px;
+			color: #f4f4f4;
+			cursor: pointer;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			height: 50px;
+			text-transform: uppercase;
+			width: 100%;
+		}
+
+		form fieldset a {
+			color: #5a5656;
+			font-size: 15px;
+		}
+
+		form fieldset a:hover {
+			text-decoration: underline;
+			color: red;
+		}
+
+		body {
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+		}
+
+		#registration {
+			margin-left: 700px;
+			margin-top: -440px;
+			width: 350px;
+			height: 20px;
+
+		}
+
+		form fieldset input[type="text1"],
+		input[type="password1"] {
+			background-color: #FFFFFF;
+			border: none;
+			border-radius: 5px;
+			color: #5a5656;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			font-size: 14px;
+			height: 30px;
+			outline: none;
+			width: 350px;
+			margin-left: 40px;
+		}
+
+		form fieldset input[type="submit1"] {
+			background-color: #008dde;
+			border: none;
+			border-radius: 3px;
+			color: #f4f4f4;
+			cursor: pointer;
+			text-align: center;
+			font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+			height: 50px;
+			text-transform: uppercase;
+			width: 400px;
+		}
+
+		.image {
+			filter: grayscale(100%);
+			filter: drop-shadow(8px 8px 10px blue);
+		}
+
+		.footer {
+			padding-top: 11px;
+			padding-bottom: 5px;
+			text-align: center;
+			/* align-items: center; */
+			/* justify-content: center; */
+		}
+
+		.icons {
+			width: 38px;
+			height: 38px;
+			margin: 10px auto;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			border-radius: 50%;
+			overflow: hidden;
+			z-index: 1;
+		}
+
+		.icons::before {
+			content: " ";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			border-radius: 50%;
+			transform: translate(100%, 100%);
+			transition: all .4s;
+			background: linear-gradient(to right, #d1edf9, #badbfe);
+		}
+
+		.icons:hover::before {
+			transform: translate(0);
+			animation: anim 0.4s ease-in-out;
+		}
+
+		@keyframes anim {
+
+			0%,
+			100% {
+				width: 100%;
+				height: 100%;
+			}
+
+			50% {
+				width: 50%;
+				height: 50%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<a href="school.html"><img src="logo.png" alt="Eden Park High School" /></a>
+		<div class="mar">
+			<h1 color="grey">
+				<marquee>Welcome to Eden Park High School</marquee>
+			</h1>
+			<hr size="3" color="blue">
+
+			<ul class="tabs">
+				<li><a title="Welcome" href="school.html">HOME</a></li>
+				<li><a title="About School" href="aboutschool.html">ABOUT SCHOOL</a></li>
+				<li><a title="Admission" href="admission.html">ADMISSION</a></li>
+				<li><a title="Sign In">
+						<font color="red">LOGIN</font>
+					</a></li>
+				<li><a title="Contact Us" href="contactus.html">CONTACT US</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="login">
+
+		<form action="javascript:void(0);" method="get">
+			<fieldset>
+				<h1 align="middle">Please Login</h1>
+				<hr>
+				<img class="image" src="logo.png" alt="Eden Park High School" align="middle" width="300"
+					height="125"><br>
+
+				<h4 align="middle"><input type="radio" name="student" value="student" checked> Students
+					<input type="radio" name="faculty" value="faculty"> Faculty <br></h4>
+				<br>
+
+				<p><input type="text" required value="Username"></p>
+				<p><input type="password" required value="Password"></p>
+				<p><a href="#">Forgot Password?</a></p><br>
+				<p><input type="submit" value="Login"></p>
+			</fieldset>
+		</form>
+
+	</div>
+
+
+	<div id="registration">
+		<form action="<?html $_html_SELF ?>" method="POST">
+			<fieldset>
+				<h1 align="middle">Registration </h1>
+				<hr><br>
+				<h4>First Name: <input type="text1" name="Fname"></h4>
+				<h4>Last Name: <input type="text1" name="Lname"></h4>
+				<h4>E-mail id: <input type="text1" name="Email"></h4>
+				<h4>Username: <input type="text1" name="Username"></h4>
+				<h4>Password: <input type="password1" name="password"></h4>
+				<br>
+				<h4 align="middle"><input type="radio" value="student" checked>Students
+					<input type="radio" value="faculty">Faculty <br></h4><br>
+				<p><input type="submit" value="Sign Up" align="middle"></p>
+			</fieldset>
+		</form>
+	</div>
+	<div class="footer">
+		<div class="icons">
+			<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-1.5x"
+					style="color: grey;"></i></a>
+		</div>
+		<div class="icons">
+			<a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-1.5x"
+					style="color: #00acee;"></i></a>
+		</div>
+		<div class="icons">
+			<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook fa-1.5x"
+					style="color: #3b5998;"></i></a>
+		</div>
+		<p style="margin: 0;">All Rights Reserved © 2021 Designed by Vipul Varshney and Abhishek Bajaj</p>
+	</div>
+</body>
+
+</html>
